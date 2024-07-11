@@ -1,7 +1,6 @@
-import React from "react";
 import PokemonCard from "./PokemonCard";
 
-function PokemonList({ pokemon }) {
+function PokemonList({ pokemon = [] }) {
   return (
     <div className="pokemon-list">
       {pokemon.map((poke) => (
