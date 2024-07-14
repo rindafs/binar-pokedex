@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function PokemonCard({ name, url }) {
   const [details, setDetails] = useState(null);
@@ -18,9 +18,8 @@ function PokemonCard({ name, url }) {
           <p> Height : {details.height} </p>
           <p> Weight : {details.weight} </p>
           <p>
-            {" "}
-            Type :{" "}
-            {details.types.map((typeinfo) => typeinfo.type.name).join(",")}{" "}
+            Type :
+            {details.types.map((typeinfo) => typeinfo.type.name).join(",")}
           </p>
         </div>
       )}

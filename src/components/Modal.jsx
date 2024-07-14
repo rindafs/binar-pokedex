@@ -1,5 +1,3 @@
-import React from "react";
-
 function Modal({ show, onClose, imageUrl }) {
   if (!show) {
     return null;
@@ -9,8 +7,7 @@ function Modal({ show, onClose, imageUrl }) {
     <div className="modal" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close" onClick={onClose}>
-          {" "}
-          &times;{" "}
+          &times;
         </span>
         <img className="modal-image" src={imageUrl} />
       </div>
